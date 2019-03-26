@@ -34,7 +34,7 @@ module ActiveAdminDatetimepicker
       case val
       when Time
         return DateTime.new(val.year, val.month, val.day, val.hour, val.min,
-                            val.sec).strftime(format)
+                            val.sec).in_time_zone.strftime(format)
       when Date
         return Date.new(val.year, val.month, val.day).strftime(format_date)
       else

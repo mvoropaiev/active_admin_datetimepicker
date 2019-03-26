@@ -20,6 +20,6 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'activeadmin', '~> 1.1'
+  spec.add_dependency 'activeadmin', ['>= 2.0.0.rc1', '< 3.0']
   spec.add_dependency 'xdan-datetimepicker-rails', '~> 2.5.4'
 end
